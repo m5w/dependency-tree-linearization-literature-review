@@ -1,0 +1,7 @@
+# gvim
+*.swp
+
+# pdflatex
+*.aux
+*.log
+*.pdf
