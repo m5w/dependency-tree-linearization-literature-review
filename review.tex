@@ -16,24 +16,25 @@
 \renewcommand\headrulewidth{0pt}
 \setlength\headsep{24pt}
 
-\setlength\topsep{0pt}
-\setlength\parskip{0pt}
-\setlength\partopsep{0pt}
+\setlength{\parskip}{0pt}
 
 \usepackage{titlesec}
-\titleformat{\section}{\normalfont\normalsize\scshape}{}{}{}
+\titleformat{\section}{\scshape}{}{}{}
 \titlespacing*{\section}{0pt}{\baselineskip}{0pt}
+
+\titleformat{\subsection}[runin]{\itshape}{}{}{}
 
 \newenvironment{workscited}{
   \newcommand\bibentry{\noindent\hangindent=0.5in}
   \newpage{}
-  \begin{center}
-    Works Cited
-  \end{center}
+  {\centering Works Cited\par{}}
 }{\newpage{}}
+
+\usepackage{calc}
 
 \begin{document}
 \begin{flushleft}
+  \titlespacing{\subsection}{0pt}{0pt}{\widthof{. }-\widthof{.}}
   \myname{}\\
   {\centering Dependency Tree Linearization Literature Review\par{}}
   \setlength{\parindent}{0.5in}
