@@ -4,6 +4,7 @@
 # pdflatex
 *.aux
 *.log
+*.out
 *.pdf
 
 !/review.pdf
