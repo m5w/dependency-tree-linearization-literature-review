@@ -39,6 +39,11 @@
   \setlength{\parindent}{0.5in}
   \section*{``The First Surface Realisation Shared Task:\\
   Overview and Evaluation Results"}
+  The purpose of the Surface Realisation (SR) Task was to compare SR systems. An SR system produces a sentence, or realization, given as an input a representation thereof. At least here, all the representations comprised nodes and edges. Nodes corresponded to lexical units. The edge of one node to another described the nature of the first node's dependence on the second.
+
+  To compare SR systems, the team established two common input formats: shallow and deep. As opposed to prior tests of SR systems, the SR Task's common input formats ensured that, within each kind of input representation (shallow or deep), each system received the same amount of information. That is, each \textit{shallow} SR system would receive the same amount of information as all the other \textit{shallow} SR systems; all the \textit{deep}, the same as all the other \textit{deep}. The team ``assessed three criteria in the human evaluations: Clarity, Readability and Meaning Similarity" (Belz et al., 221), and they also scored SR systems according to ``the following well-known automatic evaluation metrics: [. . .] \textsc{bleu}, [. . .] \textsc{nist}, [. . .] \textsc{meteor}, [. . .] \textsc{ter}" (Belz et al., 220). Differences in systems' realization qualities would depend only on the systems themselves.
+
+  As the SR Task parsed randomly-selected sentences within a corpus, it retained their original forms and contexts. A sentence's original form would serve as a kind of ``human topline" (Belz et al., 217). Perhaps we could use such a topline for training?
   \begin{workscited}
     \bibentry{}Belz, Anja, et al. ``The First Surface Realisation Shared Task: Overview and Evaluation Results." \textit{Proceedings of the 13th European Workshop on Natural Language Generation (ENLG)}, Sept. 2011, Nancy, France, Association for Computational Linguistics, 2011, pp. 217--226, www.aclweb.org/anthology/W11-2832. Accessed 29 Nov. 2016.
 
