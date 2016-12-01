@@ -13,8 +13,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\mylastname{} \thepage{}}
-\renewcommand\headrulewidth{0pt}
-\setlength\headsep{24pt}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headsep}{24pt}
 
 \setlength{\parskip}{0pt}
 
@@ -22,25 +22,26 @@
 \titleformat{\section}{\scshape}{}{}{}
 \titlespacing*{\section}{0pt}{\baselineskip}{0pt}
 
-\titleformat{\subsection}[runin]{\itshape}{}{}{}
+\usepackage{calc}
+\titleformat{\subsection}[runin]{\itshape{}}{}{}{}[.]
+\titlespacing{\subsection}{0pt}{0pt}{\widthof{. }-\widthof{.}}
 
 \newenvironment{workscited}{
-  \newcommand\bibentry{\noindent\hangindent=0.5in}
+  \newcommand{\bibentry}{\noindent{}\hangindent=0.5in}
   \newpage{}
-  {\centering Works Cited\par{}}
+  {\centering{}Works Cited\par{}}
 }{\newpage{}}
-
-\usepackage{calc}
 
 \begin{document}
 \begin{flushleft}
-  \titlespacing{\subsection}{0pt}{0pt}{\widthof{. }-\widthof{.}}
   \myname{}\\
-  {\centering Dependency Tree Linearization Literature Review\par{}}
+  {\centering{}Dependency Tree Linearization Literature Review\par{}}
   \setlength{\parindent}{0.5in}
   . . .
-  \section*{``The First Surface Realisation Shared Task: Overview and Evaluation Results}
+  \section*{``The First Surface Realisation Shared Task:\\
+  Overview and Evaluation Results"}
   . . .
+  \subsection*{Shallow Input Realization}. . .
   \begin{workscited}
     \bibentry{}Belz, Anja, et al. ``The First Surface Realisation Shared Task: Overview and Evaluation Results." \textit{Proceedings of the 13th European Workshop on Natural Language Generation (ENLG)}, Sept. 2011, Nancy, France, Association for Computational Linguistics, 2011, pp. 217--226, www.aclweb.org/anthology/W11-2832.
   \end{workscited}
